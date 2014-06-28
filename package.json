@@ -1,6 +1,6 @@
 {
   "name": "pipe-segment-filter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "pip segment filter",
   "main": "index.js",
   "scripts": {

@@ -1,6 +1,7 @@
 var Segment = require('pipe-segment')
 var Writable = require('stream').Writable
 var Readable = require('stream').Readable
+var noop = function() {}
 
 module.exports = FilterSegment
 
@@ -21,6 +22,9 @@ function FilterSegment(filter) {
       s.filtered.push(item)
     next()
   }
+
+  s.output._read = noop
+  s.filtered._read = noop
 
   return Segment(s)
 }
