@@ -1,0 +1,28 @@
+{
+  "name": "pipe-segment-filter",
+  "version": "0.1.0",
+  "description": "pip segment filter",
+  "main": "index.js",
+  "scripts": {
+    "test": "node try.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jbenet/node-pipe-segment-filter.git"
+  },
+  "keywords": [
+    "pipe",
+    "segment",
+    "filter"
+  ],
+  "author": "Juan Benet <juan@benet.ai> (http://juan.benet.ai/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jbenet/node-pipe-segment-filter/issues"
+  },
+  "homepage": "https://github.com/jbenet/node-pipe-segment-filter",
+  "dependencies": {
+    "pipe-segment": "^0.1.0"
+  },
+  "devDependencies": {}
+}
