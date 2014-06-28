@@ -10,9 +10,9 @@ function FilterSegment(filter) {
     throw new Error('filter must be a function')
 
   var s = {}
-  s.input = Writable({ objectMode: true })
-  s.output = Readable({ objectMode: true })
-  s.filtered = Readable({ objectMode: true })
+  s.input = Writable({ objectMode: true, highWaterMark: 16 })
+  s.output = Readable({ objectMode: true, highWaterMark: 16 })
+  s.filtered = Readable({ objectMode: true, highWaterMark: 16 })
 
   s.input._write = function(item, enc, next) {
     if (filter(item))
